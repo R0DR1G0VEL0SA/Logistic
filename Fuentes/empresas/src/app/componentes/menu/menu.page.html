@@ -1,26 +1,38 @@
 <ion-split-pane>
-
   <ion-menu contentId = "content"> 
 
     <ion-header>
-        <ion-toolbar color="dark" >
-          <ion-title>Menu</ion-title>
+        <ion-toolbar color="" >
+          <ion-title text-center >Logistic</ion-title>
         </ion-toolbar>
     </ion-header>
 
-    <ion-content>
+    <ion-content padding>
+
+        <ion-row padding> 
+            <ion-col size="4">
+                    <ion-avatar>
+                      <img src="assets/icon/hombre.svg">
+                    </ion-avatar> 
+            </ion-col>
+            <ion-col size="8">
+              <h4>Rodrigo,</h4>
+              <ion-label>Estado: Activo</ion-label>
+            </ion-col>
+          </ion-row>
+
       <ion-list>
 
         <ion-menu-toggle auto-hide ="false" *ngFor="let p of pages">
-            <ion-item [routerLink]="p.url" routerDirection="root" [class.active-item]="selectedPath.startsWith(p.url)">
-                <ion-label>{{p.title}}</ion-label>
+            <ion-item lines ="" [routerLink]="p.url" routerDirection="root" [class.active-item]="selectedPath.startsWith(p.url)" detail>
+                <ion-icon src= {{p.icon}} slot="start"></ion-icon>
+                <ion-label>{{p.title}} </ion-label>
             </ion-item>
         </ion-menu-toggle>
 
-        <ion-item tappable routerLink="/login" routerDirection="root">
-            <ion-icon name ="log-out" slot = "start">
-            </ion-icon>
-            Salir
+        <ion-item lines ="none" tappable routerLink="/login" routerDirection="root">
+          <ion-icon src="" slot="start" ></ion-icon>
+            Cerrar Sesión
         </ion-item>
 
       </ion-list>

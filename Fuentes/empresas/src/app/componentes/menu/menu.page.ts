@@ -10,11 +10,33 @@ export class MenuPage implements OnInit {
 
   pages = [
     {
-      title: 'Tabs',
+      title: 'Mis Documentos',
+      icon: 'assets/icon/doc.svg',
+      url: '/menu/second'
+    },
+    {
+      title: 'Servicios Disponibles',
+      icon: 'assets/icon/disponible.svg',
       url: '/menu/first'
     },
     {
-      title: 'Info',
+      title: 'Info Vehículo',
+      icon: 'assets/icon/camion.svg',
+      url: '/menu/second'
+    },
+    {
+      title: 'Info Trailer',
+      icon: 'assets/icon/remolque.svg',
+      url: '/menu/second'
+    },
+    {
+      title: 'Historial Viajes',
+      icon: 'assets/icon/diagrama.svg',
+      url: '/menu/second'
+    },
+    {
+      title: 'Soporte',
+      icon: 'assets/icon/call.svg',
       url: '/menu/second'
     }
   ];
