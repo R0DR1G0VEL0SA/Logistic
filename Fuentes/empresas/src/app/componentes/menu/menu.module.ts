@@ -23,6 +23,30 @@ const routes: Routes = [
       {
         path: 'second/details',
         loadChildren: '../details/details.module#DetailsPageModule'
+      },
+      {
+        path: 'third',
+        loadChildren: '../car/car.module#CarPageModule'
+      },
+      {
+        path: 'third/add',
+        loadChildren: '../car-add/car-add.module#CarAddPageModule'
+      },
+      {
+        path: 'fourth',
+        loadChildren: '../trailer/trailer.module#TrailerPageModule'
+      },
+      {
+        path: 'fourth/add',
+        loadChildren: '../trailer-add/trailer-add.module#TrailerAddPageModule'
+      },
+      {
+        path: 'fifth',
+        loadChildren: '../history/history.module#HistoryPageModule'
+      },
+      {
+        path: 'sixth',
+        loadChildren: '../help/help.module#HelpPageModule'
       }
     ]
   }

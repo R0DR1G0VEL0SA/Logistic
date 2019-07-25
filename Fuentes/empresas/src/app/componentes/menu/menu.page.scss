@@ -1,15 +1,21 @@
 ion-content{
-    --background:#f7f7f7;
+    --background:#FAFAFA;
 }
 
-ion-toolbar{
-    --border: none;
+ion-row{
+    margin-top: 20px;
 }
 
 h4{
-    margin: 5px;
+    margin: 0px;
+}
+
+h6{
+    margin: 0px;
+    size: 8px;
 }
 
 ion-list{
     border-radius: 8px;
 }
+

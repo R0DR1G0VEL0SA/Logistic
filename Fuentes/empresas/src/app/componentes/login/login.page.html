@@ -1,9 +1,18 @@
-<ion-header>
-  <ion-toolbar color="danger2">
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content padding>
-  <ion-button color="success" expand = "block" routerLink="/menu/first">login</ion-button>
+
+   <img class="icon" src="assets/icon/hombre.svg" alt="">
+   <ion-item>
+      <ion-label   position="floating"  > <ion-icon name="person" item-left></ion-icon>&nbsp;&nbsp;Correo Electrónico</ion-label>
+     <ion-input type="text"  name="email"></ion-input>
+   </ion-item>
+   <ion-item>
+      <ion-label   position="floating"><ion-icon name="lock" item-left></ion-icon>&nbsp;&nbsp;Contraseña</ion-label>
+     <ion-input  type="password" name="password"></ion-input>
+   </ion-item>
+   <br>
+   <ion-button routerLink="/menu/first" expand="block">Entrar</ion-button>
+   <br>
+   <p text-center >Crear cuenta</p>
+   
 </ion-content>

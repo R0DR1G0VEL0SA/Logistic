@@ -10,34 +10,38 @@ export class MenuPage implements OnInit {
 
   pages = [
     {
-      title: 'Mis Documentos',
-      icon: 'assets/icon/doc.svg',
-      url: '/menu/second'
-    },
-    {
-      title: 'Servicios Disponibles',
+      title: 'Notificaciones de Carga',
       icon: 'assets/icon/disponible.svg',
       url: '/menu/first'
     },
     {
-      title: 'Info Vehículo',
+      title: 'Configuraciones',
+      icon: 'assets/icon/ajustes.svg',
+      url: '/menu/second'
+    },
+    {
+      title: 'Mis Vehículos',
       icon: 'assets/icon/camion.svg',
-      url: '/menu/second'
+      url: '/menu/third'
     },
     {
-      title: 'Info Trailer',
+      title: 'Mis Trailers',
       icon: 'assets/icon/remolque.svg',
-      url: '/menu/second'
+      url: '/menu/fourth'
     },
     {
-      title: 'Historial Viajes',
+      title: 'Historial de Viajes',
       icon: 'assets/icon/diagrama.svg',
-      url: '/menu/second'
+      url: '/menu/fifth'
     },
     {
-      title: 'Soporte',
+      title: 'Soporte Técnico',
       icon: 'assets/icon/call.svg',
-      url: '/menu/second'
+      url: '/menu/sixth'
+    },
+    {
+      title: 'Compartir',
+      icon: 'assets/icon/social.svg'
     }
   ];
   selectedPath = '';
